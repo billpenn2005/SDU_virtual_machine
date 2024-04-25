@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.12)
+project(VirtualMachine)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
+set(SRC_LIST src/main.cpp src/ALU.cpp src/Computer.cpp src/CU.cpp src/In.cpp src/Memory.cpp src/Out.cpp)
+add_executable(main ${SRC_LIST})
