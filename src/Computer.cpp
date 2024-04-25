@@ -44,3 +44,12 @@ void Computer::run()
 {
     _CU->run();
 }
+
+Computer::~Computer()
+{
+    delete _In;
+    delete _Out;
+    delete _Memory;
+    delete _ALU;
+    delete _CU;
+}

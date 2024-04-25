@@ -11,6 +11,7 @@ class Computer
 {
     public:
     Computer(DWORD);
+    ~Computer();
     void load_from_array(DWORD_PTR,DWORD,DWORD);
     void load_from_file(std::string,DWORD);
     void run(DWORD);
